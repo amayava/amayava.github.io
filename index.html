@@ -1,0 +1,762 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="???">
+  <meta name="keywords" content="???">
+  <meta name="author" content="???">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN ARTCHIVE</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Monoton|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>URBAN (ART)CHIVE</h1>
+    <h2>Urban art and where to find it.</h2>
+
+    <nav id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html#form">Submit</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link active fa fa-instagram" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fa fa-twitter" href="#"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main" class="container">
+    <!--<div id="image-filter" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <button class="btn btn-link active" onclick="filterSelection('All')">All</button>
+      <button class="btn btn-link" onclick="filterSelection('Architecture')">Architecture</button>
+      <button class="btn btn-link" onclick="filterSelection('Sculpture')">Sculpture</button>
+      <button class="btn btn-link" onclick="filterSelection('Street Art')">Street Art</button>
+    </div>-->
+
+    <div id="gallery" class="row">
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-one" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Banksy</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-one.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Sculpture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="#info-two" role="button" data-toggle="modal" class="filterDiv Sculpture">
+            <div class="overlay">
+              <h3 class="overlay-text">Barbara Hepworth</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-two.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="#info-three" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Nathan Bowen</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-three.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="#info-four" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Unknown Artist</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-four.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-five" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Pegasus</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-five.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-six" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Banksy</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-six.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Sculpture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-seven" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Eduardo Paolozzi</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-seven.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Architecture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-eight" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Chamberlin, Powell & Bon</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-eight.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Sculpture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-nine" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Chris Bracey</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-nine.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Sculpture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-ten" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Richard Serra</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-ten.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Sculpture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-eleven" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Richard Wilson</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-eleven.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-twelve" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Banksy</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-twelve.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-thirteen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Ray Walker</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-thirteen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-fourteen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Artmongers</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-fourteen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-fifteen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Dale Grimshaw</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-fifteen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-sixteen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Unknown Artist</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-sixteen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-seventeen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Nathan Bowen</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-seventeen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-eighteen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Nathan Bowen</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-eighteen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Street Art">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-nineteen" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Nathan Bowen</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-nineteen.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+      <div class="filterDiv Sculpture">
+        <div id="image-container" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <a href="#info-twenty" role="button" data-toggle="modal">
+            <div class="overlay">
+              <h3 class="overlay-text">Auguste Rodin</h3>
+
+              <div class="overlay-sheet"></div>
+            </div>
+
+            <img src="images/image-twenty.jpg" class="img-responsive">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-up">
+      <input type="image" src="images/arrow.png">
+    </div>
+  </div>
+
+  <div id="info-section">
+    <div id="info-one" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Nathan Bowen, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>140 Stoke Newington Church Street, London, N16 0JU, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521126153609!6m8!1m7!1sgD4l3QtmEV4eyDm3ilhu_g!2m2!1d51.56189802141295!2d-0.08087410896655269!3f74.50683940727411!4f-1.3490955259744766!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Banksy</p>
+            <p class="art-info">The Royal Family, 2001</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-two" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Barbara Hepworth, Winged Figure, 1963" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Holles Street, London, W1C, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521126352466!6m8!1m7!1sZVhH-Qaqg8S9A0g5d5bHCg!2m2!1d51.51504613108422!2d-0.1443415197245709!3f283.53855584065815!4f25.47177130357376!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Barbara Hepworth</p>
+            <p class="art-info">Winged Figure, 1963</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-three" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Nathan Bowen, Alzheimer's Research" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>2A Lewisham Way, London, SE14 6PP, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521128594570!6m8!1m7!1sfjBn8bTbZvZW_nKI2AsqyQ!2m2!1d51.47558366970377!2d-0.03636749850687011!3f248.02194151469374!4f-1.4582816183185798!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Nathan Bowen</p>
+            <p class="art-info">Alzheimer's Research</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-four" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Uknown Artist, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>27 Stoke Newington Church Street, London, N16, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521126891341!6m8!1m7!1sBjRvfhS4XDyFBk9TDx0K6g!2m2!1d51.56205300514012!2d-0.0749127733624081!3f255.78624132014852!4f9.933677406390018!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Unknown Artist</p>
+            <p class="art-info">Untitled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-five" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Pegasus, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>1 Orsman Road, London, N1, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521127853907!6m8!1m7!1sagX83KKOGC6AdH5ZaZiHvw!2m2!1d51.53625252789831!2d-0.07732187076524853!3f119.74351137676138!4f-13.846726219674451!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Pegasus</p>
+            <p class="art-info">Theresa May 'Dressed to Kill'</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-six" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Banksy, Falling Shopper" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>25 Bruton Lane, London, W1J 6JQ, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521128928839!6m8!1m7!1sumOflFJnK5-aBBHo3YG99g!2m2!1d51.51048534803157!2d-0.1438546536957587!3f103.82274526565479!4f28.665975046891603!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Banksy</p>
+            <p class="art-info">Falling Shopper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-seven" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Eduardo Paolozzi, Newton" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>96 Euston Road, London, NW1 2DB, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521130122920!6m8!1m7!1sSYz8j9g1TJHnKk3WZUtspg!2m2!1d51.52874647266606!2d-0.1276735072180492!3f12.615624569634733!4f1.2735707782423304!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Eduardo Paolozzi</p>
+            <p class="art-info">Newton, 1995</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-eight" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Chamberlin, Powell & Bon, The Barbican" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Silk Street, London, EC2Y 8DS, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521134598032!6m8!1m7!1sAIoYwPMObKpK0O7imo0UFA!2m2!1d51.51949482339924!2d-0.09377973594331479!3f302.3176541274085!4f26.850746086580486!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Chamberlin, Powell & Bon</p>
+            <p class="art-info">The Barbican, 1976</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-nine" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Chris Bracey, God's Own Junkyard" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Unit 12, Ravenswood Industrial Estate, Shernhall Streed, London, E17 9HQ, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521142587153!6m8!1m7!1sGI1kj6VMrokSAmgFKjvbpQ!2m2!1d51.58350972927397!2d-0.007427990289759012!3f237.90544407558426!4f-12.749626831081628!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Chris Bracey</p>
+            <p class="art-info">God's Own Junkyard</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-ten" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Richard Serra, Fulcrum" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>22 Eldon St, London, EC2M 7LA, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521143452981!6m8!1m7!1sMu-hVFwxXyn5iI_3rzY1Rg!2m2!1d51.51813064676353!2d-0.08414817211697875!3f50.72861663323685!4f6.31554488059173!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Richard Serra</p>
+            <p class="art-info">Fulcrum, 1987</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-eleven" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Richard Wilson, Slice of Reality" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Olympian Way, London, SE10 0DY, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521144042099!6m8!1m7!1sCAoSLEFGMVFpcE5TMHNZT0hXQ1ZNeVlXMUR2aS1GWmg5elRKdl9aWDFyOC1Jb3hh!2m2!1d51.50405028301067!2d-0.0002998744475348758!3f33.221817958942296!4f-2.68760426728646!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Richard Wilson</p>
+            <p class="art-info">Slice of Reality, 2000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-twelve" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Banksy, The Queen as 'Alladin Sane'" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>20 Upper Maudlin Street, Bristol, BS2 8DJ, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521146076633!6m8!1m7!1s1loRklTIg5FN32CA_yxJrA!2m2!1d51.45746707117948!2d-2.596967227726672!3f69.37676570884679!4f16.487778357162654!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Banksy</p>
+            <p class="art-info">The Queen as 'Alladin Sane', 2012</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-thirteen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Ray Walker, Hackney Peace Mural" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>12 Dalston Lane, London, E8 3DF, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521147251670!6m8!1m7!1sD3nT3fR44H2QU5daiP_JPg!2m2!1d51.54626004691247!2d-0.07440978925176397!3f61.20103882914488!4f11.12465261884509!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Ray Walker</p>
+            <p class="art-info">Hackney Peace Mural, 1983</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="info-fourteen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Artmongers, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>16 Coulgate Street, London, SE4 2EX, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521482140160!6m8!1m7!1sDTJ6D9etjFgcmr6SNwd0pQ!2m2!1d51.46405143380899!2d-0.03686934566145976!3f208.4488736510789!4f4.607575734827421!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Artmongers</p>
+            <p class="art-info">Untitled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-fifteen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Dale Grimshaw, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Foxberry Road, London, SE4, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521482245483!6m8!1m7!1sDTJ6D9etjFgcmr6SNwd0pQ!2m2!1d51.46405143380899!2d-0.03686934566145976!3f101.00534758546488!4f-10.758749995690465!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Dale Grimshaw</p>
+            <p class="art-info">Untitled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-sixteen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Unknown Artist, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>81 Brick Lane, London, E1 6QR, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521482895619!6m8!1m7!1sOLPyRhkMxA20N2chsnvlfQ!2m2!1d51.52057586491057!2d-0.07187586341749795!3f291.85763294749177!4f-17.347300929091304!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Unknown Artist</p>
+            <p class="art-info">Untitled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-seventeen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Nathan Bowen, Grandma Did It" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>12 Argyll Street, London, W1F, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521483373572!6m8!1m7!1sv8NKxr4vJ6vo3kKI_SZeMw!2m2!1d51.51524159255295!2d-0.141182999600678!3f104.08713512475046!4f-7.537399852145626!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Nathan Bowen</p>
+            <p class="art-info">Grandma Did It</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-eighteen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Nathan Bowen, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>8 Catford Hill, London, SE6 4PX, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521484935219!6m8!1m7!1sjsus18aQgDbxXReMqSefxA!2m2!1d51.44379910532812!2d-0.02616448150249855!3f307.47413160851795!4f-10.751577448193245!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Nathan Bowen</p>
+            <p class="art-info">Untitled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-nineteen" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Nathan Bowen, Untitled" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>178 New Cross Road, London, SE14 5AA, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521485407200!6m8!1m7!1sd_OLoUinykcT60m_17-ttw!2m2!1d51.47487171536417!2d-0.04661648559419368!3f197.18772456918254!4f-1.0430642542564357!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Nathan Bowen</p>
+            <p class="art-info">Untitled</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-twenty" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Auguste Roding, Burghers of Calais" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>1 Millbank, London, SW1P 3LX, U.K.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1521485759289!6m8!1m7!1sqr1JGomOgyvziS5gT7q6Jw!2m2!1d51.49739168708411!2d-0.1250107714870126!3f45.640335069151874!4f-8.426716044060981!5f0.7820865974627469" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <p class="title-artist">Auguste Rodin</p>
+            <p class="art-info">The Burghers of Calais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
